@@ -1,3 +1,18 @@
-<h2 id="title">Welcome to Ember.js</h2>
+<div class= "row">
+	<div class= "col-md-12">
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      {{#link-to 'index' classNames="navbar-brand"}}Mblog{{/link-to}}
+		      <ul class="nav navbar-nav">
+            <li >{{#link-to 'contact'}}Contact{{/link-to}}</li>
+          </ul>
+		    </div>
+		  </div>
+		</nav>
+	</div>
+	<div class="col-md-12">
+		{{outlet}}
+	</div>
+</div>
 
-{{outlet}}
